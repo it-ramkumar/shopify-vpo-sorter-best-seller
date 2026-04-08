@@ -3,7 +3,7 @@ import { NextResponse } from 'next/server';
 export async function POST() {
   const token = process.env.SHOPIFY_ADMIN_TOKEN;
   const domain = process.env.SHOPIFY_STORE_DOMAIN;
-  // Shopify GraphQL expects a GID format
+  // Shopify GraphQL expects a GID format in a 
   const collectionId = `gid://shopify/Collection/${process.env.COLLECTION_ID}`;
 
   const query = `
